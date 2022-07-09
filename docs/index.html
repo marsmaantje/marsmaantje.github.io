@@ -1,27 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!--preview for eg discord-->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://linkfork.co/">
-    <meta property="og:title" content="Casper Sikkens | portfolio">
-    <meta property="og:description" content="Portfolio of Casper">
-    <meta property="og:image" content="http://www.caspersikkens.nl/images/headshot.png">
 
+<head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <script src='main.js'></script>
 </head>
-<body>
-    <h1>this is my (future) portfolio webpage</h1>
-    <p>please check back later</p>
-    <br>
-    <p>this is me</p>
-    <img src="images/headshot.png" alt="Me :)">
 
-    <a href="NeosVR">link to my neos page?</a>
+<body>
+    <header>
+
+        <img src="images/logo.webp" class="logo headerItem">
+
+        <nav class="headerNav headerItem">
+            <ul>
+                <li>
+                    <a href="#">about me</a>
+                </li>
+                <li>
+                    <a href="#">Previous experiences</a>
+                </li>
+                <li>
+                    <a href="#">Showcase</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a target="blank" href="https://www.youtube.com/channel/UC6o0EIY7aaGdNwdJhKbSLYw" class="headerItem">
+            <img src="images/youtube.png" class="youtube">
+        </a>
+
+    </header>
+
+    <aside>
+        <nav>
+            <h2>Recent posts</h2>
+            <ul>
+                <li>
+                    <a href="https://youtu.be/MiKm8Y4sc6Q" target="_blank">traffic system </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/InNZIsV2Rd0" target="_blank">Train Ride</a>
+                </li>
+                <li>
+                    <a href="https://danidan.itch.io/queen-of-the-anthill" target="_blank">Project liftoff</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <figure>
+            <img src="images/me.png" class="selfie">
+            <figcaption>
+                me: 2022
+            </figcaption>
+        </figure>
+
+        <h1>About Me</h1>
+
+        <article>
+            <h2>General</h2>
+            <ul>
+                <li>Casper Sikkens</li>
+                <li>2001</li>
+                <li>Dutch</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Previous Experiences</h2>
+            <p>
+                PLC programming
+                Arduino Projects
+            </p>
+            <ul>
+                <li>LED strip lighting</li>
+                <li>Arcade controller</li>
+            </ul>
+            VR Game dev
+            <ul>
+                <li>Playspace syncing tool</li>
+                <li>Traffic system</li>
+                <li>Sound/culling systems</li>
+            </ul>
+        </article>
+
+        <article class="Showcase">
+            <h2>Showcase</h2>
+            <figure>
+            <img Traffic system src="images/traffic system.jpg"/>
+            <figcaption>Traffic system</figcaption>
+            </figure>
+            <figure>
+            <img Culling system src="images/culling system.jpg"/>
+            <figcaption>Culling system</figcaption>
+            </figure>
+            <figure>
+            <img Black Mesa Train Ride src="images/Black mesa tram ride.jpg"/>
+            <figcaption>Black Mesa Tram Ride</figcaption>
+            </figure>
+        </article>
+    </main>
+
 </body>
+
 </html>

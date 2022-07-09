@@ -1,0 +1,14 @@
+header {
+    flex-direction: column;
+    height: 300px;
+}
+
+header img{
+    height: 100px;
+    margin: auto;
+}
+
+header a{
+    height: 100px;
+    margin: auto;
+}
