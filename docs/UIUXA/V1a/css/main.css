@@ -10,25 +10,193 @@ body {
     flex-direction: column;
 }
 
+
 header {
     /* header is positioned at the top of the page, and sticks with it */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    background-color: #000;
+    height: 40px;
+
+    background-color: #283d3b;
+
+    /* header is a flex container */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #edddd4;
+    font-size: 1.5em;
 }
+
+header .logo {
+    /* logo is positioned at the left of the header element */
+    background-color: #197278;
+    height: 100%;
+    width: 160px;
+    text-align: center;
+}
+
+header nav {
+    flex: 0.5;
+}
+
+header ul {
+    /* ul is a flex container */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    /* a is positioned inside li */
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #edddd4;
+    transition: 200ms;
+}
+
+header a:hover {
+    /* a is positioned inside li */
+    color: #197278;
+    background-color: #edddd4;
+    transition: 200ms;
+} 
+
+header .login {
+    /* login is positioned at the right of the header element */
+    background-color: #197278;
+    height: 100%;
+    width: 160px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.login button {
+    /* button is positioned inside login */
+    background-color: #283d3b;
+    border: none;
+    color: #edddd4;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.login button:hover {
+    /* button is positioned inside login */
+    background-color: #edddd4;
+    color: #283d3b;
+    transition: 200ms;
+}
+
 
 main {
     /* main is positioned below the header element */
     flex: 1;
-    min-height: calc(100vh - 150px);
-    margin-top: 100px;
-    background-color: #fff;
-    color: #000;
-    height:1000px;
+    min-height: calc(100vh - 90px);
+    margin-top: 40px;
+
+    background-color: #edddd4;
+
+    /* main is a flex container */
+    display: flex;
+    flex-direction: column;
 }
+
+main .banner {
+    /* banner is positioned inside main */
+    height: 600px;
+    min-height: 600px;
+    background-image: url("../images/background_kamernet.jpg");
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .search {
+    /* search is positioned inside main banner */
+    background-color: #283d3b;
+    height: 40%;
+    width: 60%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search form {
+    /* form is positioned inside search */
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search form input {
+    /* input is positioned inside form */
+    flex: 0.5;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 0 10px;
+    font-size: 1.5em;
+}
+
+.search form button {
+    /* button is positioned inside form */
+    flex: 0.2;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: #197278;
+    color: #edddd4;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.search form button:hover {
+    /* button is positioned inside form */
+    background-color: #edddd4;
+    color: #283d3b;
+    transition: 200ms;
+}
+
+main article {
+    /* article is positioned inside main */
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
 
 footer {
     /* footer is positioned below the main element */
@@ -36,29 +204,43 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #666;
-    color: #000;
+
+    background-color: #197278;
+    color: #edddd4;
 }
 
-header ul {
-    /* list only shows elements, and is aligned horizontally */
-    list-style: none;
+footer ul {
+    /* ul is a flex container */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-}
-
-header li {
-    /* list items are aligned horizontally, content is aligned in the center of the element */
-    display: inline-block;
-    text-align: center;
-}
-
-header li a {
-    /* links are aligned horizontally and vertically */
-    display: inline-block;
-    width: 100%;
+    align-items: center;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
     height: 100%;
-    padding: 10px;
-    color: #fff;
+}
+
+footer li {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 50px;
+}
+
+footer a {
+    /* a is positioned inside li */
+    display: block;
+    padding: 0 10px;
     text-decoration: none;
+    color: #edddd4;
+    transition: 200ms;
+}
+
+footer a:hover {
+    /* a is positioned inside li */
+    color: #197278;
+    background-color: #edddd4;
+    transition: 200ms;
 }
