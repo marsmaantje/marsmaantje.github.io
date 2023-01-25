@@ -130,25 +130,6 @@ main {
     min-height: calc(100vh - 90px);
     margin-top: 40px;
     background-color: #fff;
-
-    /* main is a flex container */
-    display: flex;
-    flex-direction: column;
-}
-
-main .banner {
-    /* banner is positioned inside main */
-    height: 600px;
-    min-height: 600px;
-    background-image: url("../images/background_kamernet.jpg");
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    margin-top: 0px;
 }
 
 main .search {
@@ -219,84 +200,13 @@ main article {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
-    margin-top: 40px;
-}
-
-main article:last-of-type {
-    /* article is positioned inside main */
-    margin-bottom: 40px;
-}
-
-form.submitForm {
-    /* submitForm is positioned inside article */
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding: 0 10%;
-    margin-top: 40px;
-    width: 100%;
-}
-
-form.submitForm * {
-    /* all elements inside submitForm are positioned inside submitForm */
-    width: 60%;
-    margin: 5px 0;
-}
-
-form.submitForm input {
-    /* input is positioned inside submitForm */
-    height: 40px;
-    width: 50%;
-    border: none;
-    border-radius: 0;
-    padding: 0 10px;
-    font-size: 1.5em;
-    border-radius: 10px;
-}
-
-form.submitForm .smallInput {
-    /* smallInput is positioned inside submitForm */
-    width: 30%;
-}
-
-form.submitForm .bigInput {
-    /* bigInput is positioned inside submitForm */
-    width: 40%;
-    min-height: 80px;
-    text-overflow: ellipsis;
-}
-
-form.submitForm .label {
-    /* label is positioned inside submitForm */
-    width: 50%;
-    text-align: left;
-    font-size: 1.5em;
-    margin: 10px 0 0 0;
-}
-
-form.submitForm button {
-    /* button is positioned inside submitForm */
-    height: 40px;
-    width: 50%;
-    border: none;
-    border-radius: 0;
-    background-color: #197278;
-    color: #edddd4;
-    font-size: 1.5em;
-    cursor: pointer;
-    transition: 200ms;
-    border-radius: 10px;
 }
 
 article.searchMap {
     /* searchMap is positioned inside article */
     position: absolute;
-    padding: 0 10%;
-    margin-top: 40px;
     width: 100%;
+    height: 100%;
 }
 
 article.searchMap iframe {
