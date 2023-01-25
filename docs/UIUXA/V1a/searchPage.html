@@ -30,11 +30,60 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19556.143181172793!2d6.888439849999999!3d52.215807999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snl!4v1674636717413!5m2!1sen!2snl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
 
-            <article class="searchBackground">
+            <article class="searchNav">
                 <div class="search">
                     <form>
-                        <input type="text" placeholder="Search for a room">
-                        <button type="submit">Search</button>
+                        <div class="searchItem">
+                            <input type="text" placeholder="Search for a room near">
+                        </div>
+                        <div class="searchItem">
+                            <p>Range (km)</p>
+                            <output class="sliderValue">24</output>
+                            <input type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.value = this.value" class="uk-range" id="form-horizontal-range">
+                        </div>
+                        <div class="searchItem">
+                            <p>
+                                Propperty type
+                            </p>
+                            <select>
+                                <option value="1">Room</option>
+                                <option value="2">Apartment</option>
+                                <option value="3">Studio</option>
+                            </select>
+                        </div>
+                        <div class="searchItem">
+                            <p>
+                                Price range
+                            </p>
+                            <select>
+                                <option value="1">€0 - €200</option>
+                                <option value="2">€200 - €400</option>
+                                <option value="3">€400 - €600</option>
+                                <option value="4">€600 - €800</option>
+                                <option value="5">€800 - €1000</option>
+                                <option value="6">€1000+</option>
+                            </select>
+                        </div>
+                        <div class="searchItem">
+                            <p>
+                                Min room size:
+                            </p>
+                            <select>
+                                <option value="1">8m²</option>
+                                <option value="2">10m²</option>
+                                <option value="3">16m²</option>
+                                <option value="4">20m²</option>
+                                <option value="5">25m²</option>
+                                <option value="6">30m²+</option> 
+                            </select>
+                        </div>
+                        <div class="searchItem">
+                            <button type="submit">Search</button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="submit">Reset</button>
+                            
+                        </div>
                     </form>
                 </div>
             </article>
