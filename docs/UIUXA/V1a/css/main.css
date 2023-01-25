@@ -57,6 +57,16 @@ header li {
     height:100%;
 }
 
+header li.activeNav {
+    /* activeNav is positioned inside li */
+    background-color: #edddd4;
+}
+
+header li.activeNav a {
+    /* a is positioned inside li */
+    color: #283d3b;
+}
+
 header a {
     /* a is positioned inside li */
     height:100%;
