@@ -28,8 +28,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    padding: 20px;
     box-sizing: border-box;
     background-color: var(--header-color);
     z-index: 1;
@@ -132,10 +130,6 @@ article.About_me p {
     margin-bottom: 20px;
 }
 
-/*Q: why does this not get used? even though acrticle img is more general?*/
-/*A: because article img is more specific*/
-/*Q: how could I make this more specific than article img?*/
-/*A: by adding a class to the img tag*/
 article.About_me img {
     position: absolute;
     top: 20px;

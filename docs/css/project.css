@@ -28,8 +28,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    padding: 20px;
     box-sizing: border-box;
     background-color: var(--header-color);
     z-index: 1;
@@ -91,7 +89,6 @@ main {
 article {
     position: relative;
     width: 80%;
-    height: 400px;
     padding: 20px;
     box-sizing: border-box;
     border: 2px solid var(--main-border-color);
@@ -104,9 +101,35 @@ article {
     transition: border-color 0.5s ease;
 }
 
+article h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    left:400px;
+}
+
+article h1.Title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    /*center allign text*/
+    text-align: center;
+}
+
+article p.TimeFrame {
+    font-size: 0.8em;
+    color: var(--main-text-hover-color);
+    text-align: right;
+}
+
+article p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
 article img {
-    border-radius: 100%;
+    border-radius: 40px;
+    border: 2px solid var(--main-border-color);
     overflow: hidden;
+    width: 80%;
 }
 
 article a {
@@ -120,55 +143,34 @@ article:hover {
     transition: border-color 0.5s ease;
 }
 
-/* About me */
-
-article.About_me h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
 }
 
-article.About_me p {
-    font-size: 1em;
-    margin-bottom: 20px;
+footer div {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-/*Q: why does this not get used? even though acrticle img is more general?*/
-/*A: because article img is more specific*/
-/*Q: how could I make this more specific than article img?*/
-/*A: by adding a class to the img tag*/
-article.About_me img {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 200px;
-    height: 200px;
-    border: 2px solid var(--main-border-color);
-    border-radius: 100%;
-    overflow: hidden;
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Project */
-article.Project {
-    padding-left: 400px;
+footer a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: color 0.2s ease;
 }
 
-article.Project h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    left:400px;
-}
-
-article.Project p {
-    font-size: 1em;
-    margin-bottom: 20px;
-}
-
-article.Project img {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 350px;
-    height: 350px;
-    border: 2px solid var(--main-border-color);
-    object-fit: cover;
+footer a:hover {
+    color: var(--main-text-hover-color);
+    transition: color 0.2s ease;
 }
