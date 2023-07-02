@@ -1,168 +1,136 @@
 @import url(style-large.css) screen and (min-width: 1100px);
 @import url(style-small.css) screen and (max-width: 1099px);
 
-/* Color theme variables */
 * {
-    --main-bg-color: #080018;
-    --main-text-color: #fff;
-    --main-text-hover-color: #aaa;
-    --main-border-color: #666;
-    --main-hover-color: #fff;
-    --header-color: #000;
-
     margin: 0;
     padding: 0;
-
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    font-family: 'Roboto', sans-serif;
 }
 
-.Rounded {
-    border-radius: 100%;
-}
-
-/* Header */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--header-color);
-    z-index: 1;
-}
-
-header ul {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    list-style-type: none;
+body {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    background-image: url("../images/Background.png");
+    background-size: 128px;
+}
+
+header {
+    flex: 1 1 100%;
+    display: flex;
+    background-color: black;
     justify-content: space-between;
-    background-color: var(--header-color);
-    font-size: 2em;
+    color: white;
+    padding: 0 20px;
 }
 
-header ul li {
-    display: inline-block;
-    margin-left: 20px;
+.headerItem {
+    background-color: black;
 }
 
-header ul li a {
-    text-decoration: none;
-    color: var(--main-text-color);
-    transition: font-size 0.2s ease, color 0.2s ease;
-}
-
-header ul li a:hover {
-    font-size: 1.5em;
-    color: var(--main-text-hover-color);
-    transition: font-size 0.2s ease, color 0.2s ease;
-}
-
-header ul li img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-/* Main */
-
-main {
-    position: relative;
-    top: 100px;
-    width: 100%;
+.headerNav ul{
+    list-style: none;
+    display: flex;
     height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: min(max(2vw, 0.8em), 1.5em);
+}
 
-    /*Center allign all content*/
+.headerNav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.headerNav a:hover {
+    color: #f71735;
+    transition: 0.3s;
+}
+
+
+.youtube {
+    height:100%;
+    width: auto;
+}
+
+
+aside {
+    border: 1px solid black;
+    background-color: white;
+    flex-basis: 200px;
+    padding: 10px;
+}
+
+aside ul{
+    list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
 }
 
-article {
-    position: relative;
-    width: 80%;
-    height: 400px;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 2px solid var(--main-border-color);
-    border-radius: 40px;
-    margin: 20px;
-    font-size: 1.5em;
-
-    /*Cutoff all content that overflows*/
-    overflow: hidden;
-    transition: border-color 0.5s ease;
+aside li {
+    color: lightblue;
 }
 
-article img {
-    border-radius: 100%;
-    overflow: hidden;
+aside li:hover {
+    border: 1px solid grey;
 }
 
-article a {
+aside a {
     text-decoration: none;
-    color: var(--main-text-color);
+    color: #2e282a;
+    transition: 0.3s;
 }
 
-article:hover {
-    /*animated hover color*/
-    border-color: var(--main-hover-color);
-    transition: border-color 0.5s ease;
+aside a:hover {
+    transition: 0.3s;
+    color: #f71735;
 }
 
-/* About me */
-
-article.About_me h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+main {
+    background-color: white;
+    flex-grow: 0.7;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-article.About_me p {
-    font-size: 1em;
-    margin-bottom: 20px;
-}
-
-article.About_me img {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 200px;
-    height: 200px;
-    border: 2px solid var(--main-border-color);
+.selfie {
     border-radius: 100%;
-    overflow: hidden;
+    width: 20vw;
 }
 
-/* Project */
-article.Project {
-    padding-left: 400px;
+main > figure figcaption {
+    font-weight: bold;
+    color: #444;
 }
 
-article.Project h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    left:400px;
+main ul {
+    list-style: inside;
+    text-align: left;
+    padding-bottom: 10px;
 }
 
-article.Project p {
-    font-size: 1em;
-    margin-bottom: 20px;
+main article {
+    padding: 20px;
+    width: calc(100% - 80px);
+    margin: auto;
 }
 
-article.Project img {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 350px;
-    height: 350px;
-    border: 2px solid var(--main-border-color);
-    object-fit: cover;
+main article figure {
+    width: 400px;
+}
+
+main article img {
+    width: 400px;
+}
+
+.Showcase  figure{
+    margin: auto;
 }

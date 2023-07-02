@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CasperSikkens</title>
+    <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <script src='main.js'></script>
@@ -12,51 +12,103 @@
 
 <body>
     <header>
-        <ul>
-            <li><a href="index.html"><img src="images/logo.webp" class="Rounded"/></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="UnderConstruction.html">About</a></li>
-            <li><a href="Contact Me.html">Contact</a></li>
-        </ul>
+
+        <img src="images/logo.webp" class="logo headerItem">
+
+        <nav class="headerNav headerItem">
+            <ul>
+                <li>
+                    <a href="#">about me</a>
+                </li>
+                <li>
+                    <a href="#">Previous experiences</a>
+                </li>
+                <li>
+                    <a href="#">Showcase</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a target="blank" href="https://www.youtube.com/channel/UC6o0EIY7aaGdNwdJhKbSLYw" class="headerItem">
+            <img src="images/youtube.png" class="youtube">
+        </a>
+
     </header>
 
+    <aside>
+        <nav>
+            <h2>Recent posts</h2>
+            <ul>
+                <li>
+                    <a href="https://youtu.be/MiKm8Y4sc6Q" target="_blank">traffic system </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/InNZIsV2Rd0" target="_blank">Train Ride</a>
+                </li>
+                <li>
+                    <a href="https://danidan.itch.io/queen-of-the-anthill" target="_blank">Project liftoff</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
     <main>
-        <article class="About_me"> <a href="#"> <!--About me summary-->
-            <h1>About me</h1>
-            <p>Game programmer
-            <br>Currently studying CMGT at Saxion University of Applied Sciences
-            <br>In my free time I like to play games, make games, and play around in VR
-            </p>
-            <img src="images/me.png" class="Rounded About_me_img"/>
-        </a> </article>
+        <figure>
+            <img src="images/me.png" class="selfie">
+            <figcaption>
+                me: 2022
+            </figcaption>
+        </figure>
 
-        <article class="Project"> <a href="Tram Ride.html"><!--Project 1-->
-            <h1>Black Mesa Tram Ride</h1>
-            <p>An ongoing project of recreating the iconic Black Mesa tram ride in NeosVR, a virtual reality metaverse that allows for real time collaborative development.
-                <br>The project is being developed by a team of 2 people, including myself.
-            </p>
-            <img src="images/Tram ride.png" class="Rounded"/>
-        </a> </article>
+        <h1>About Me</h1>
 
-        <article class="Project"> <a href="Swamp Game.html"><!--Project 2-->
-            <h1>Whispers Of The Swamp</h1>
-            <p>A 2D platformer game made in 8 weeks in Unity for a school project, with a 6 person team.</p>
-            <img src="images/Whispers Of The Swamp - cropped.png" class="Rounded"/>
-        </a> </article>
-        
-        <article class="Project"> <a href="UnderConstruction.html"><!--Project 2-->
-            <h1>Covid Busters</h1>
-            <p>A 3D top down casual game made in 3 weeks in Unity for a school project, with a 6 person team.</p>
-            <img src="images/CovidBusters.png" class="Rounded"/>
-        </a> </article>
+        <article>
+            <h2>General</h2>
+            <ul>
+                <li>Casper Sikkens</li>
+                <li>2001</li>
+                <li>Dutch</li>
+            </ul>
+        </article>
 
-        <article class="Project"> <a href="UnderConstruction.html"><!--Project 2-->
-            <h1>Deep Dreams</h1>
-            <p>A social casual pool world made for NeosVR for people to socialize in.
-            <br>Made for a competition in one month, with it we won first place in the social worlds category.
+        <article>
+            <h2>Previous Experiences</h2>
+            <p>
+                PLC programming
+                Arduino Projects
             </p>
-            <img src="images/DeepDreams.png" class="Rounded"/>
-        </a> </article>
+            <ul>
+                <li>LED strip lighting</li>
+                <li>Arcade controller</li>
+            </ul>
+            VR Game dev
+            <ul>
+                <li>Playspace syncing tool</li>
+                <li>Traffic system</li>
+                <li>Sound/culling systems</li>
+            </ul>
+        </article>
+
+        <article class="Showcase">
+            <h2>Showcase</h2>
+            <figure>
+            <img Traffic system src="images/traffic system.jpg"/>
+            <figcaption>Traffic system</figcaption>
+            </figure>
+            <figure>
+            <img Culling system src="images/culling system.jpg"/>
+            <figcaption>Culling system</figcaption>
+            </figure>
+            <figure>
+            <img Black Mesa Train Ride src="images/Black mesa tram ride.jpg"/>
+            <figcaption>Black Mesa Tram Ride</figcaption>
+            </figure>
+        </article>
     </main>
+
 </body>
+
 </html>
