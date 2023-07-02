@@ -1,0 +1,174 @@
+@import url(style-large.css) screen and (min-width: 1100px);
+@import url(style-small.css) screen and (max-width: 1099px);
+
+/* Color theme variables */
+* {
+    --main-bg-color: #080018;
+    --main-text-color: #fff;
+    --main-text-hover-color: #aaa;
+    --main-border-color: #666;
+    --main-hover-color: #fff;
+    --header-color: #000;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.Rounded {
+    border-radius: 100%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--header-color);
+    z-index: 1;
+}
+
+header ul {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    font-size: 2em;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: font-size 0.2s ease, color 0.2s ease;
+}
+
+header ul li a:hover {
+    font-size: 1.5em;
+    color: var(--main-text-hover-color);
+    transition: font-size 0.2s ease, color 0.2s ease;
+}
+
+header ul li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+/* Main */
+
+main {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    /*Center allign all content*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--main-border-color);
+    border-radius: 40px;
+    margin: 20px;
+    font-size: 1.5em;
+
+    /*Cutoff all content that overflows*/
+    overflow: hidden;
+    transition: border-color 0.5s ease;
+}
+
+article img {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+article a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+article:hover {
+    /*animated hover color*/
+    border-color: var(--main-hover-color);
+    transition: border-color 0.5s ease;
+}
+
+/* About me */
+
+article.About_me h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+article.About_me p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/*Q: why does this not get used? even though acrticle img is more general?*/
+/*A: because article img is more specific*/
+/*Q: how could I make this more specific than article img?*/
+/*A: by adding a class to the img tag*/
+article.About_me img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--main-border-color);
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+/* Project */
+article.Project {
+    padding-left: 400px;
+}
+
+article.Project h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    left:400px;
+}
+
+article.Project p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+article.Project img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 350px;
+    height: 350px;
+    border: 2px solid var(--main-border-color);
+    object-fit: cover;
+}
