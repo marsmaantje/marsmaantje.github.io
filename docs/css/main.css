@@ -1,5 +1,5 @@
-@import url(style-large.css) screen and (min-width: 1100px);
-@import url(style-small.css) screen and (max-width: 1099px);
+@import url(style-large.css) screen and (min-width: 1340px);
+@import url(style-small.css) screen and (max-width: 1339px);
 
 /* Color theme variables */
 * {
