@@ -9,17 +9,11 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/project.css'>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src='main.js'></script>
+    <script src="IncludeScript.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo.webp" class="Rounded"/></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="UnderConstruction.html">About</a></li>
-            <li><a href="Contact Me.html">Contact</a></li>
-            
-        </ul>
+    <header htmlinclude="snippets/Header.html">
     </header>
 
     <main>
@@ -42,4 +36,7 @@
         </article>
     </main>
 </body>
+<script>
+includeHTML();
+</script>
 </html>

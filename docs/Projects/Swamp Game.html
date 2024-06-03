@@ -6,20 +6,14 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>CasperSikkens</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/project.css'>
-    <script src='main.js'></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/project.css'>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <script src='../main.js'></script>
+    <script src="IncludeScript.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo.webp" class="Rounded"/></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="UnderConstruction.html">About</a></li>
-            <li><a href="Contact Me.html">Contact</a></li>
-            
-        </ul>
+    <header htmlinclude="snippets/Header.html">
     </header>
 
     <main>
@@ -29,9 +23,9 @@
             <p>A 2D platformer game where you play as a kid who uncovers a secret in the swamp.
             <br>The game was made for a school project where we had 8 weeks to make a swamp themed game.
             </p>
-            <img src="images/Whispers Of The Swamp.png"/>
+            <img src="../images/Whispers Of The Swamp.png"/>
             <p></p>
-            <img src="images/Whispers Of The Swamp 2.png"/>
+            <img src="../images/Whispers Of The Swamp 2.png"/>
 
             <footer>
                 <div class="Credits">
@@ -57,4 +51,7 @@
         </article>
     </main>
 </body>
+<script>
+includeHTML();
+</script>
 </html>

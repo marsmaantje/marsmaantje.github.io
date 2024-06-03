@@ -6,20 +6,14 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>CasperSikkens</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/project.css'>
-    <script src='main.js'></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/project.css'>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <script src='../main.js'></script>
+    <script src="IncludeScript.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo.webp" class="Rounded"/></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="UnderConstruction.html">About</a></li>
-            <li><a href="Contact Me.html">Contact</a></li>
-            
-        </ul>
+    <header htmlinclude="snippets/Header.html">
     </header>
 
     <main>
@@ -30,11 +24,11 @@
             <br>The project is being developed by a team of 2 people, including myself.
             <br>It started out as only the tram but has since evolved into importing the entire Black Mesa Research Facility into NeosVR untill the Resonance Cascade.
             </p>
-            <img src="images/Tram ride.png"/>
+            <img src="../images/Tram ride.png"/>
             <p>For this project we are using the Black Mesa assets, a fan remake of the original Half-Life game in the Source engine.
             <br>But since NeosVR is a completely different engine we had to recreate all systems to get everything functional.
             </p>
-            <img src="images/Tram ride 2.png"/>
+            <img src="../images/Tram ride 2.png"/>
 
             <footer>
                 <div class="Credits">
@@ -57,4 +51,7 @@
         </article>
     </main>
 </body>
+<script>
+includeHTML();
+</script>
 </html>

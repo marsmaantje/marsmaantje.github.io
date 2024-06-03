@@ -9,21 +9,15 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src='main.js'></script>
+    <script src="IncludeScript.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo.webp" class="Rounded"/></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="UnderConstruction.html">About</a></li>
-            <li><a href="Contact Me.html">Contact</a></li>
-            
-        </ul>
+    <header htmlinclude="snippets/Header.html">
     </header>
 
     <main>
-        <article class="About_me"> <a href="#"> <!--About me summary-->
+        <article class="About_me"> <a href="About.html"> <!--About me summary-->
             <h1>About me</h1>
             <p>Game programmer
             <br>Currently studying CMGT at Saxion University of Applied Sciences
@@ -47,7 +41,7 @@
             <img src="images/me.png" class="Rounded About_me_img"/>
         </a> </article>
 
-        <article class="Project"> <a href="Tram Ride.html"><!--Project 1-->
+        <article class="Project"> <a href="Projects/Tram Ride.html"><!--Project 1-->
             <h1>Black Mesa Tram Ride</h1>
             <p>An ongoing project of recreating the iconic Black Mesa tram ride in NeosVR, a virtual reality metaverse that allows for real time collaborative development.
                 <br>The project is being developed by a team of 2 people, including myself.
@@ -55,7 +49,7 @@
             <img src="images/Tram ride.png" class="Rounded"/>
         </a> </article>
 
-        <article class="Project"> <a href="Swamp Game.html"><!--Project 2-->
+        <article class="Project"> <a href="Projects/Swamp Game.html"><!--Project 2-->
             <h1>Whispers Of The Swamp</h1>
             <p>A 2D platformer game made in 8 weeks in Unity for a school project, with a 6 person team.</p>
             <img src="images/Whispers Of The Swamp - cropped.png" class="Rounded"/>
@@ -76,4 +70,7 @@
         </a> </article>
     </main>
 </body>
+<script>
+includeHTML();
+</script>
 </html>
