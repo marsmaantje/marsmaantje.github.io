@@ -193,3 +193,11 @@ footer a:hover {
     color: var(--main-text-hover-color);
     transition: color 0.2s ease;
 }
+
+.small {
+    max-width: 200px;
+}
+
+.float_right {
+    float: right;
+}
