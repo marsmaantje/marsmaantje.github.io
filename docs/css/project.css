@@ -6,6 +6,7 @@
     --main-bg-color: #080018;
     --main-text-color: #fff;
     --main-text-hover-color: #aaa;
+    --main-text-note-color: #666;
     --main-border-color: #666;
     --main-hover-color: #fff;
     --header-color: #000;
@@ -192,4 +193,18 @@ footer a {
 footer a:hover {
     color: var(--main-text-hover-color);
     transition: color 0.2s ease;
+}
+
+.small {
+    max-width: 200px;
+}
+
+.float_right {
+    float: right;
+    margin-left: 20px;
+}
+
+.note {
+    font-size: 0.6em;
+    color: var(--main-text-note-color);
 }
