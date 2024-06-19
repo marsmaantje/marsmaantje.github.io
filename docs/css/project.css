@@ -140,7 +140,7 @@ article img {
     border-radius: 40px;
     border: 2px solid var(--main-border-color);
     overflow: hidden;
-    width: 80%;
+    max-height: 80vh;
 }
 
 article a {
@@ -185,7 +185,7 @@ footer ul {
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--main-text-color);
     transition: color 0.2s ease;
 }
