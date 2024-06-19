@@ -19,7 +19,7 @@
 }
 
 .Rounded {
-    border-radius: 100%;
+    border-radius: 100% !important;
 }
 
 .Horizontal {
@@ -184,4 +184,5 @@ article.Project img {
     height: 350px;
     border: 2px solid var(--main-border-color);
     object-fit: cover;
+    border-radius: 40px;
 }
