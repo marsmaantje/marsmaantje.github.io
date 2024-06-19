@@ -145,8 +145,13 @@ article img {
 }
 
 article a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--main-text-color);
+}
+
+article a:hover {
+    color: var(--main-text-hover-color);
+    transition: color 0.2s ease;
 }
 
 article:hover {
