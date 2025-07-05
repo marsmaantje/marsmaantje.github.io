@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CasperSikkens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/project.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/main.js"></script>
+    <script src="/IncludeScript.js"></script>
+</head>
+
+<body>
+    <header htmlinclude="/snippets/Header.html">
+    </header>
+
+    <main>
+        <article class="Project">
+            <h1 class="Title">Lan Unity Chat</h1>
+            <p class="TimeFrame">2023-2025</p>
+            <p>Lan Unity Chat is a small project where I experiment with local TCP and UDP messaging.
+                <br>I set up the project so that clients can dynamically gather a list of all servers in the local
+                netwrok through UDP broadcasting a connection request, after which the server responds with its local ip
+                and port.
+            </p>
+            <img src="/images/LanUnityChat base.png" />
+            <p>The project started from a template unity project made by Hans Wichman, with a built in state machine,
+                and framework for tcp messaging.
+                On top of this I built the UDP broadcasting and server discoverability, as well as the ability to send
+                over images between clients. The sending over of images proved a bit more of a challenge than imagined.
+                Since the image data was more than could fit in one tcp packet, I had to rewrite the tcp messaging
+                framework to support messages being split up into multiple packets.
+            </p>
+            <img src="/images/LanUnityChat Image.png" />
+            <p>
+                For Images I also wanted to learn how to get a webcam input into Unity, which was surprisingly simple,
+                and then capture an image from the webcam, encode it to Base64, send it over the network socket, and
+                decode it again on the other side.
+            </p>
+
+            <footer>
+                <div class="Credits">
+                    <h2>Credits:</h2>
+                    <ul>
+                        <li>Casper Sikkens</li>
+                        <li>Hans Wichman (template project)</li>
+                    </ul>
+                </div>
+                <div class="References">
+                    <h2>References:</h2>
+                    <ul>
+                        <li><a href="https://github.com/marsmaantje/LanUnityChat">Github Project</a></li>
+                        <li><a href="https://unity.com/">Unity</a></li>
+                        <li><a
+                                href="https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.tcpclient?view=net-9.0">C#
+                                TCP Client Documentation</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </article>
+    </main>
+</body>
+<script>
+    includeHTML();
+</script>
+
+</html>
